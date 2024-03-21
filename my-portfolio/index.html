@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subodh p - A Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Poppins:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: white;
+            /* background-image: linear-gradient(to right, #112a7c, #320a33); */
+            color: black;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: row;
+            height: 90px;
+            background-color: rgb(1, 1, 17);
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0px 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(136, 136, 255);
+        }
+
+        main hr {
+            border: 2px;
+            background: rgb(191, 142, 238);
+            height: 1.2px;
+            margin: 45px 45px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .first {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 70px 0;
+        }
+
+
+        .first>div {
+            width: 30%;
+        }
+
+        .left-section {
+            width: 34px;
+            font-size: 1.6rem;
+
+        }
+
+        .right-section {
+            width: 34px;
+        }
+
+        .right-section img {
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .left-section span {
+            color: rgb(178, 105, 247);
+        }
+
+        #element {
+            color: rgb(178, 105, 247);
+        }
+
+        /* education section code from here */
+        .second {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            max-width: 80vw;
+            height: 45vw;
+            align-items: center;
+        }
+
+        .second .boxes {
+            display: flex;
+            flex-direction: row;
+            width: auto;
+            height: 40vw;
+            justify-content: space-around;
+            align-items: center;
+            padding: 15px;
+            margin: 10px 0;
+        }
+
+        .boxes .box {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 33%;
+            padding: 10px 20px;
+            background-color: rgb(239, 223, 252);
+            color: rgb(27, 2, 51);
+            border-radius: 10px;
+            margin: 10px 7px;
+            font-size: 1.2rem;
+        }
+
+        .box .sub-d {
+            margin: 10px 5px;
+            width: 80%;
+            font-size: 1.2rem;
+            align-items: center;
+            justify-content: center;
+            border: solid black;
+            border-width: 2px;
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 1.4rem;
+            font-family: 'Josefin Sans', sans-serif;
+            font-weight: bold;
+        }
+
+        .doc a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 30%;
+            max-width: fit-content;
+            text-decoration: none;
+            border: solid rgb(178, 105, 247);
+            border-width: 2px;
+            border-radius: 5px;
+            padding: 5px;
+            font-weight: bold;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        .doc a:hover {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 30%;
+            max-width: fit-content;
+            text-decoration: none;
+            border: solid rgb(178, 105, 247);
+            border-width: 2px;
+            border-radius: 5px;
+            padding: 5px;
+            font-weight: bold;
+            background-color: rgb(145, 42, 241);
+            color: white;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+
+        #add {
+            color: rgb(0, 0, 0);
+            font-size: 1.3rem;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .box hr {
+            border: 2px;
+            background: rgb(182, 103, 255);
+            height: 1.8px;
+            margin: 2px 0;
+
+        }
+
+
+
+
+
+        /* about code from here */
+        .about {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            max-width: 80vw;
+            height: 45vw;
+            align-items: center;
+        }
+
+        .about .abt-me {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            max-width: auto;
+            height: 45vw;
+            justify-content: space-around;
+            background-color: rgb(239, 223, 252);
+            border-radius: 10px;
+            margin: 15px 5px;
+        }
+
+        .left-section-1 {
+            font-size: 1.6rem;
+            /* background-image: url(my.png); */
+            width: 25%;
+            height: 33vw;
+            border: solid rgb(27, 2, 51);
+            border-width: 2px;
+        }
+
+        .abt-me .left-section-1 img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .right-section-1 {
+            width: 50%;
+            height: 30vw;
+            padding: 8px;
+            margin: 25px 8px;
+            font-size: 1.5rem;
+            font-family: 'Josefin Sans', sans-serif;
+            color: rgb(27, 2, 51);
+
+        }
+
+        .CV a {
+            display: flex;
+            margin: 30px 30%;
+            max-width: fit-content;
+            text-decoration: none;
+            border: solid rgb(178, 105, 247);
+            border-width: 2px;
+            border-radius: 5px;
+            padding: 5px;
+            font-weight: bold;
+        }
+
+        .CV a:hover {
+            background-color: rgb(145, 42, 241);
+            display: flex;
+            margin: 30px 30%;
+            max-width: fit-content;
+            text-decoration: none;
+            border: solid rgb(133, 20, 240);
+            border-width: 2px;
+            border-radius: 5px;
+            padding: 5px;
+            color: white;
+        }
+
+        /* Skills section design */
+        .skills {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            max-width: 80vw;
+            height: 45vw;
+            align-items: center;
+        }
+
+        .skills .my-skills {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            max-width: auto;
+            height: 40vw;
+            background-color: rgb(239, 223, 252);
+            border-radius: 10px;
+            margin: 15px 5px;
+            color: rgb(27, 2, 51);
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .skills-bar {
+            padding: 25px 30px;
+        }
+
+        .skills-bar .bar {
+            margin: 25px 0;
+        }
+
+        .skills-bar .bar .info span {
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+
+        .skills-bar .bar .info {
+            margin-bottom: 8px;
+            color: rgb(27, 2, 51);
+        }
+
+        .skills-bar .bar .progress-line {
+            position: relative;
+            height: 15px;
+            width: 650px;
+            background: #f0f0f0;
+            border-radius: 10px;
+            border: solid rgb(27, 2, 51);
+            border-width: 2px;
+            transform: scaleX(0);
+            transform-origin: left;
+            animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+        }
+
+        .bar .progress-line span {
+            position: absolute;
+            background: rgb(133, 20, 240);
+            height: 100%;
+            border-radius: 10px;
+            transform: scaleX(0);
+            transform-origin: left;
+            animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+        }
+
+        @keyframes animate {
+            100% {
+                transform: scaleX(1);
+            }
+        }
+
+        .progress-line .html {
+            width: 80%;
+        }
+
+        .progress-line .css {
+            width: 70%;
+        }
+
+
+        .progress-line .javascript {
+            width: 50%;
+        }
+
+        .progress-line .java {
+            width: 60%;
+        }
+
+        .progress-line .python {
+            width: 70%;
+        }
+
+        .progress-line .php {
+            width: 50%;
+        }
+
+        .bar .progress-line span::before {
+            position: absolute;
+            content: "";
+            height: 0;
+            right: 0;
+            top: -12px;
+            width: 0;
+            border: 7px solid transparent;
+            border-bottom-width: 0px;
+            border-right-width: 0px;
+            border-top-style: #f0f0f0;
+            border-top-color: #f0f0f0;
+        }
+
+        .bar .progress-line span::after {
+            position: absolute;
+            right: 0;
+            top: -28px;
+            color: #07374a;
+            font-size: 12px;
+            font-weight: 700;
+            background: #f0f0f0;
+            padding: 1px 8px;
+            border-radius: 3px;
+        }
+
+        .progress-line .html::after {
+            content: "80%";
+        }
+
+        .progress-line .css::after {
+            content: "70%";
+        }
+
+        .progress-line .python::after {
+            content: "70%";
+        }
+
+        .progress-line .java::after {
+            content: "60%";
+        }
+
+
+        .progress-line .javascript::after {
+            content: "50%";
+        }
+
+        .progress-line .php::after {
+            content: "50%";
+        }
+
+        /* work experince code from here */
+        .Third {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            max-width: 80vw;
+            height: 45vw;
+            align-items: center;
+        }
+
+        .Third .boxes-2 {
+            display: flex;
+            flex-direction: row;
+            width: auto;
+            height: 40vw;
+            justify-content: space-around;
+            padding: 15px;
+            margin: 10px 0;
+        }
+
+        .boxes-2 .box-1 {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 45%;
+            padding: 0px 10px;
+            background-color: rgb(239, 223, 252);
+            color: rgb(27, 2, 51);
+            border-radius: 10px;
+            margin: 10px 10px;
+            /* margin-right: 35px; */
+            font-size: 1.2rem;
+        }
+
+        .box-1 h2 {
+            margin: 5px 35%;
+        }
+
+        .inship {
+            margin: 10px 20px;
+            padding: 10px 5px;
+            font-family: 'Josefin Sans', sans-serif;
+            color: rgb(25, 2, 46);
+            font-size: 1.5rem;
+        }
+
+        .inship span {
+            color: rgb(94, 8, 175);
+            font-weight: bold;
+        }
+
+        .inship ul li {
+            margin: 10px 65px;
+            list-style: none;
+
+        }
+
+        .inship ul li span {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: rgb(27, 2, 51);
+        }
+
+
+        .CTF a {
+            display: flex;
+            margin: 3px 40%;
+            max-width: fit-content;
+            text-decoration: none;
+            border: solid rgb(178, 105, 247);
+            border-width: 2px;
+            border-radius: 5px;
+            padding: 5px;
+            font-weight: bold;
+            font-family: 'Josefin Sans', sans-serif;
+            font-family: 2rem;
+            justify-content: center;
+
+        }
+
+        .CTF a:hover {
+            background-color: rgb(145, 42, 241);
+            display: flex;
+            margin: 5px 40%;
+            ;
+            max-width: fit-content;
+            text-decoration: none;
+            border: solid rgb(133, 20, 240);
+            border-width: 2px;
+            border-radius: 5px;
+            padding: 5px;
+            color: white;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+
+        /* CONTACT SECTION DESIGN */
+        .contact-me {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            max-width: 80vw;
+            height: 45vw;
+            align-items: center;
+        }
+
+        .contact-me .contact {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            max-width: auto;
+            height: 40vw;
+            justify-content: space-around;
+            background-color: rgb(239, 223, 252);
+            border-radius: 10px;
+            margin: 15px 5px;
+        }
+
+
+        .contact-me .contact .left-section-2 {
+            text-align: center;
+            width: 30%;
+            color: rgb(27, 2, 51);
+        }
+
+        .contact-me .contact .left-section-2 .detail i {
+            font-size: 25px;
+            background-color: rgb(133, 20, 240);
+            width: 50px;
+            border-radius: 50%;
+            line-height: 50px;
+        }
+
+        .contact-me .contact .right-section-2 {
+            width: 55%;
+            height: 30vw;
+            padding: 8px;
+            margin: 25px 8px;
+            font-size: 1.5rem;
+            font-family: 'Josefin Sans', sans-serif;
+            color: rgb(27, 2, 51);
+        }
+
+        .contact-me .contact .right-section-2 .form {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+
+        }
+
+        .contact-me .contact .right-section-2 .form .btn-2 {
+            background: transparent;
+            border: solid #31028a;
+            border-width: 2px;
+            padding: 5px;
+            font-size: 1.3rem;
+            font-family: 'Josefin Sans', sans-serif;
+            border-radius: 5px;
+            width: 90px;
+        }
+
+        .contact-me .contact .right-section-2 .form .btn-2:hover {
+            background: rgb(133, 20, 240);
+            border: solid #31028a;
+            border-width: 2px;
+            padding: 5px;
+            font-size: 1.3rem;
+            font-family: 'Josefin Sans', sans-serif;
+            border-radius: 5px;
+            width: 90px;
+            color: white;
+        }
+
+
+
+        .contact-me .contact .right-section-2 .form input,
+        textarea {
+            margin: 20px 0px;
+            width: 100%;
+            background: transparent;
+            border: 2px solid #31028a;
+            padding: 15px 10px;
+            border-radius: 5px;
+            resize: none;
+            font-size: 18px;
+            color: #310d74;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        .contact-me .contact .right-section-2 .form input::placeholder,
+        textarea::placeholder {
+            color: #000000;
+        }
+
+        section#contact .container .col-2 .form input:focus,
+        textarea:focus {
+            border: 2px solid #000000;
+            outline: none;
+        }
+
+        /* footer design */
+        footer {
+            width: auto;
+            height: 20vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Josefin Sans', sans-serif;
+            margin-top: 35px;
+        }
+
+        footer .icons {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        footer .icons .licons-list a i {
+            font-size: 25px;
+            padding: 13px;
+        }
+
+        footer .icons .icons-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+        }
+
+        footer .icons .icons-list a i {
+            color: #530097;
+            font-size: 30px;
+            padding: 15px;
+
+        }
+
+        footer .icons .icons-list a i:hover {
+            color: #ffffff;
+            transition: all 0.3s;
+            scale: 1.1;
+        }
+
+        /* meafdia screen 1100px */
+        @media only screen and (max-width: 1100px) {
+            header {
+                padding: 0px 0px;
+            }
+
+            .about {
+                height: 60vw;
+
+            }
+
+            div.abt-me {
+                height: 50vw;
+                padding: 30px;
+
+            }
+
+            div.right-section-1 {
+                padding-left: 0px;
+                font-size: 1.1rem;
+            }
+
+            div.left-section-1 img {
+                margin-right: 0px;
+                margin-bottom: 40px;
+            }
+
+            .skills {
+                height: 70vw;
+            }
+
+            .skills .my-skills {
+                height: 65vw;
+                font-size: 1rem;
+
+            }
+
+            .second {
+                width: 80vw;
+                height: 150vw;
+            }
+
+            .second .boxes {
+                flex-direction: column;
+                display: flex;
+                width: 100%;
+                height: 140vw;
+                justify-content: space-between;
+            }
+
+            .second .boxes .box {
+                display: flex;
+                height: 45vw;
+                width: 90%;
+            }
+
+
+            .Third {
+                height: 75vw;
+            }
+
+            .Third .boxes-2 {
+                height: 70vw;
+            }
+
+
+            .Third .boxes-2 .box-1 {
+                font-size: 1.1rem;
+            }
+
+            .contact-me {
+                height: 58vw;
+            }
+
+            .contact-me .contact {
+                height: 50vw;
+            }
+
+            .contact-me .contact .right-section-2 {
+                height: 42vw;
+            }
+        }
+
+        /* meadia querry for 900px */
+        @media only screen and (max-width: 900px) {
+
+            .about .abt-me .right-section-1 {
+                height: 35vw;
+            }
+
+            .second {
+                height: 150vw;
+            }
+
+            .second .boxes .box {
+                font-size: 1.1rem;
+                height: 44vw;
+            }
+
+            .second .boxes .box .sub-d {
+                font-size: 1.2rem;
+            }
+
+            .Third {
+                height: 130vw;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .Third .boxes-2 {
+                flex-direction: column;
+                height: 120vw;
+                align-items: center;
+            }
+
+            .Third .boxes-2 .box-1 {
+                width: 75%;
+                font-size: 1.5rm;
+                height: 50%;
+            }
+
+            .contact-me {
+                height: 65vw;
+            }
+
+            .contact-me .contact {
+                height: 55vw;
+                font-size: 0.8rem;
+            }
+
+            .contact-me .contact .right-section-2 {
+                height: 45vw;
+            }
+
+        }
+
+
+
+        /* for small device with size less than 500px */
+
+        @media only screen and (max-width: 500px) {
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav .right {
+                display: none;
+            }
+
+
+            .first {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .first .left-section {
+                width: 70%;
+            }
+
+            .first .right-section {
+                display: none;
+            }
+
+            .first .right-section {
+                width: 60%;
+            }
+
+            .about {
+                height: 200vw;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .about .abt-me {
+                flex-direction: column;
+                height: 180vw;
+                padding: 30px;
+                width: 100%;
+            }
+
+            .about .abt-me .right-section-1 {
+                padding-left: 0px;
+                font-size: 1.1rem;
+                height: 120vw;
+                width: 75vw;
+            }
+
+
+            .left-section-1 {
+                height: 50vw;
+                width: 60%;
+            }
+
+            .left-section-1 img {
+                margin-right: 0px;
+                margin-bottom: 40px;
+            }
+
+
+            .skills {
+                height: 130vw;
+                align-items: center;
+            }
+
+            .skills .my-skills {
+                height: 120vw;
+                font-size: 1rem;
+
+            }
+
+            .skills .my-skills .bar {
+                width: 60vw;
+                margin: 10px 0;
+            }
+
+            .skills-bar {
+                padding: 30px 45px;
+            }
+
+            .skills-bar .bar .info span {
+                font-size: 1.1rem;
+            }
+
+            .skills-bar .bar .progress-line {
+                width: 240px;
+            }
+
+            .second {
+                align-items: center;
+                width: 90vw;
+                height: 490vw;
+            }
+
+            .second .boxes {
+                flex-direction: column;
+                width: 100%;
+                height: 485vw;
+            }
+
+            .second .boxes .box {
+                height: 145vw;
+                font-size: 1.1rem;
+
+            }
+
+            .Third {
+                align-items: center;
+                width: 100vw;
+                height: 405vw;
+            }
+
+            .Third .boxes-2 {
+                flex-direction: column;
+                width: 90vw;
+                height: 400vw;
+            }
+
+            .Third .boxes-2 .box-1 {
+                width: 90%;
+            }
+
+            .Third .boxes-2 .box-1 .inship {
+                font-size: 1.3rem;
+            }
+
+            .CTF a {
+                width: 80px;
+                justify-content: center;
+            }
+
+            .contact-me {
+                height: 280vw;
+                align-items: center;
+            }
+
+            .contact-me .contact {
+                flex-direction: column;
+                height: 260vw;
+                width: 100%
+            }
+
+            .contact-me .contact .left-section-2 {
+                width: 80%;
+                margin-top: 20px;
+            }
+
+
+            .contact-me .contact .right-section-2 {
+                height: 250vw;
+                width: 70%;
+                margin: 55px;
+            }
+
+
+            footer {
+                height: 60vw;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Subodh p</div>
+            <div class="right">
+                <ul>
+                    <li><a href="./">Home</a></li>
+                    <li><a href="./#about">About</a></li>
+                    <li><a href="./">Services</a></li>
+                    <li><a href="./#project">Project</a></li>
+                    <li><a href="./#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- First section -->
+        <section class="first">
+            <div class="left-section">Hey Welcome....!<br>My name is <span>Subodh Paswan</span><br>
+                and professionally i am
+                <div>
+                    <span id="element"></span>
+                </div>
+            </div>
+            <div class="right-section">
+                <img src="dev.png" alt="">
+            </div>
+        </section>
+        <hr>
+
+        <!-- About section -->
+        <section class="about" id="about">
+            <h1>ABOUT ME</h1>
+            <div class="abt-me">
+                <div class="left-section-1">
+                    <img src="me.jpg" alt="">
+                </div>
+                <div class="right-section-1">
+                    <h1> I'm Subodh S. Paswan</h1><br>
+                    <P>
+                        I'm 22-year-old and passionate engineering student with a strong IT background.
+                        As an avid learner and a driven individual,
+                        I find immense joy in exploring the limitless possibilities of
+                        technology and its impact on the world. With a thirst for knowledge
+                        and an insatiable curiosity, I'm constantly pushing the boundaries to
+                        evolve as a skilled engineer. Through my portfolio, I invite you to join
+                        me on my journey of innovation and discovery as I strive to make a meaningful
+                        contribution to the ever-changing landscape of technology.
+                        Together, let's embark on this exciting adventure!
+                    </P>
+                    <div class="CV">
+                        <a target="_blank"
+                            href="https://drive.google.com/file/d/1zRRoktfH6HFVjTQEH2V4uOPUiCjvsqUb/view?usp=drive_link">Download
+                            CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <!-- skills section -->
+        <section class="skills">
+            <h1>SKILLS</h1>
+            <div class="my-skills">
+                <div class="skills-bar">
+
+                    <div class="bar">
+                        <div class="info">
+                            <span>HTML</span>
+                        </div>
+                        <div class="progress-line"><span class="html"></span></div>
+
+                        <div class="bar">
+                            <div class="info">
+                                <span>CSS</span>
+                            </div>
+                            <div class="progress-line"><span class="css"></span></div>
+
+                            <div class="bar">
+                                <div class="info">
+                                    <span>JAVASCRIPT</span>
+                                </div>
+                                <div class="progress-line"><span class="javascript"></span></div>
+
+                                <div class="bar">
+                                    <div class="info">
+                                        <span>PYTHON</span>
+                                    </div>
+                                    <div class="progress-line"><span class="python"></span></div>
+
+                                    <div class="bar">
+                                        <div class="info">
+                                            <span>Java Programming</span>
+                                        </div>
+                                        <div class="progress-line"><span class="java"></span></div>
+
+                                        <div class="bar">
+                                            <div class="info">
+                                                <span>PHP</span>
+                                            </div>
+                                            <div class="progress-line"><span class="php"></span></div>
+
+                                        </div>
+
+
+                                        <div class="bar">
+                                            <div class="info">
+                                                <span>PCB Designing</span>
+                                            </div>
+                                            <div class="progress-line"><span class="java"></span></div>
+
+                                        </div>
+        </section>
+        <hr>
+
+        <!-- Second section -->
+        <section class="second">
+            <h1>EDUCATION</h1>
+            <div class="boxes">
+                <div class="box">
+                    <h2>Engineering(B.Tech)</h2>Elctronics & Telecommunications Engineering
+                    <hr><br>
+
+                    <h3>Government College of Engineering, yavatmal(M.H)</h3><br>
+                    <div class="sub-d">
+                        <p>
+                            <span id="add">Address :</span>
+                            Naringe Nagar,Dhamangaon Road, Yavatmal(M.H)<br><br>
+                            <span id="add">Status :</span> Pursuing<br>
+                            <span id="add">Year :</span> 2022 - 25 <br>
+                            <span id="add">Grade :</span> 6.86 CGPA<br>
+                        </p>
+                    </div>
+                    <div class="doc"><a href="./">Download</a></div>
+                </div>
+
+                <div class="box">
+                    <h2>Diploma</h2>Computer Science & Engineering
+                    <hr><br>
+                    <h3>Government Polytechnic College, Gondia</h3><br>
+                    <div class="sub-d">
+                        <p>
+                            <span id="add">Address :</span>
+                            Nagpur road, Fulchur, Gondia(M.H)<br><br>
+                            <span id="add">Status :</span> Completed<br>
+                            <span id="add">Year :</span> 2020 - 2022 <br>
+                            <span id="add">Grade :</span> 76.11 Percentage<br>
+                        </p>
+                    </div>
+                    <div class="doc"><a target="_blank"
+                            href="https://drive.google.com/file/d/1zIsYIYTUOZ7BspRjgxLMz6U07JhLxXgf/view?usp=drive_link">Download</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h2>High School</h2>Higher Secondary School(Science)<br>
+                    <hr><br>
+                    <h3>Funde Science and IT & CS College, Gondia</h3><br>
+                    <div class="sub-d">
+                        <p>
+                            <span id="add">Address :</span>
+                            Amgon road, Fulchur, Gondia(M.H)<br><br>
+                            <span id="add">Status :</span> Completed<br>
+                            <span id="add">Year :</span> 2018 - 2020 <br>
+                            <span id="add">Grade :</span> 77.23 Percentage<br>
+                        </p>
+                    </div>
+                    <div class="doc"><a target="_blank"
+                            href="https://drive.google.com/file/d/1zGf5Q9fWMi4e1Bx1EDJyvbXePJjUIK9U/view?usp=drive_link">Download</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <!-- Third Section -->
+        <section class="Third" id="project">
+            <h1>WORK EXPERINCE</h1>
+            <div class="boxes-2">
+                <div class="box-1">
+                    <h2>Internship</h2>
+                    <div class="inship">
+                        <h3>Web Development Training & Internship by Internshala</h3><br>
+                        <p>In this training i learn about basic fundamentals of web
+                            development and created sample websites using different technologies
+                            such as <span>HTML, CSS, JavaScript.</span> <br>
+                            Also i was get interact with web development framework like
+                            <span>ReactJS AND NodeJS</span> etc.<br>
+                        </p>
+                        <ul>
+                            <li><span>Company : </span>Internshala</li>
+                            <li><span>Duration : </span>45 Days</li>
+                            <li><span>Location : </span>Online</li>
+                        </ul>
+                    </div>
+                    <div class="CTF"><a target="_blank"
+                            href="https://drive.google.com/file/d/1zAJYaL2TIjDmrxONPaBw4_8GeP734xJh/view?usp=drive_link">Certificate</a>
+                    </div>
+                </div>
+
+                <div class="box-1">
+                    <h2>Internship</h2>
+                    <div class="inship">
+                        <h3>PCB Designing</h3><br>
+                        <p>In this training i learn about basic fundamentals of Schematic Design, Componets Selection,
+                            PCB Layout, Routing, Design Rule, Prototyping and testing, Assembly, Quality Asurance, etc.
+                        </p>
+                        <ul>
+                            <li><span>Company : </span>EFY institute</li>
+                            <li><span>Duration : </span>70 Days</li>
+                            <li><span>Location : </span>Offline</li>
+                        </ul>
+                    </div>
+                    <div class="CTF"><a target="_blank"
+                            href="https://drive.google.com/file/d/1zDE0lItnOgbCToYuhS7YNEjthuULGgmC/view?usp=drive_link">Certificate</a>
+                    </div>
+                </div>
+
+                <div class="box-1">
+                    <h2>Projects</h2>
+                    <div class="inship">
+                        <h3>Book Store Management System</h3><br>
+                        <p>This project sets out to equip bookstores with a robust and user- friendly platform that
+                            transforms the way they manage their operations. With the Book Store Management System,
+                            inventory management becomes effortless, sales transactions are streamlined, customer
+                            relationships are nurtured, and crucial business insights are easily accessible.
+                        </p><br>
+                    </div>
+                    <div class="CTF"><a target="_blank"
+                            href="https://drive.google.com/file/d/1zSKCJTcHkOYWpJedhm-rJ-nC-3J5fEA7/view?usp=drive_link">Reports</a>
+                    </div>
+                </div>
+
+                <!-- <div class="box-1">
+                    
+                </div> -->
+            </div>
+        </section>
+        <hr>
+
+        <!-- Contact me section -->
+        <section class="contact-me" id="contact">
+            <h1>CONTACT ME</h1>
+            <div class="contact">
+                <div class="left-section-2">
+                    <div class="detail detail-1">
+                        <div class="bg">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h3>Adress</h3>
+                        </div>
+                        <div>
+                            <p>Behind RS Dharamkanta Shivaji Nagar Fulchur peth, Gondia(M.H)</p>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="detail detail-2">
+                        <div class="bg">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3>Mobile</h3>
+                        </div>
+                        <div>
+                            <p>+91-7219708323</p>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="detail detail-3">
+                        <div class="bg">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                        </div>
+                        <div>
+                            <p>paswansubodh719@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-section-2">
+                    <div class="form">
+                        <form action="" target="_blank" method="post">
+                            <h2 class="element">Send Message</h2>
+                            <input class="element" type="text" placeholder="Enter your name" required>
+                            <input class="element" type="email" placeholder="Enter your email" required>
+                            <textarea class="element" name="" id="" cols="30" rows="5"
+                                placeholder="Write your message here" required></textarea>
+                            <button class="btn-2" type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Engineering Student', 'PCB Designer'],
+            typeSpeed: 70,
+        });
+    </script>
+
+    <footer>
+
+        <h2>Subodh Paswan</h2>
+
+        <div class="icons">
+            <ul class="icons-list">
+                <li><a href="https://www.instagram.com/subodh_s_kumar_/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://wa.me/72197083223"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/subodh-paswan-57b7a127a"><i
+                            class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+        Copyright &copy; Subodh Paswan | All rights reserved
+    </footer>
+
+</body>
+
+</html>
